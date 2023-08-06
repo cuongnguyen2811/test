@@ -53,7 +53,7 @@ resource "azurerm_service_plan" "asp" {
   resource_group_name = azurerm_resource_group.webapp.name
   location            = azurerm_resource_group.webapp.location
   os_type             = "Windows"
-  sku_name            = var.app_service_plan_sku_name
+  sku_name            = "P2v3"
   # app_service_environment_id = azurerm_app_service_environment_v3.ase3.id
 
   tags = local.common_tags

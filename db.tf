@@ -156,12 +156,12 @@ resource "azurerm_mssql_elasticpool" "elasticpool" {
   sku {
     name     = "GP_Gen5"
     tier     = "GeneralPurpose"
-    capacity = 6
+    capacity = 2
     family   = "Gen5"
   }
   per_database_settings {
     min_capacity = 0
-    max_capacity = 6
+    max_capacity = 2
   }
 
   tags = local.common_tags
